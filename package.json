@@ -3,8 +3,8 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node init && turbo build",
+    "dev": "node init && turbo dev",
     "i18n:check": "node ./scripts/i18n/check.mjs",
     "i18n:check:fix": "node ./scripts/i18n/check.mjs --fix",
     "i18n:report": "node ./scripts/i18n/report.mjs",
@@ -31,7 +31,7 @@
     "node": ">=20.19.0"
   },
   "packageManager": "pnpm@10.32.1",
-  "version": "2.17.6",
+  "version": "2.18.0",
   "dependencies": {
     "dotenv-mono": "^1.5.1"
   }
