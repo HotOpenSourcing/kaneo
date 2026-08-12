@@ -11,8 +11,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc && email dev --port 3002 --dir src/templates",
+    "build": "node init && tsc",
+    "dev": "node init && tsc && email dev --port 3002 --dir src/templates",
     "export": "email export",
     "lint": "biome check .",
     "format": "biome format --write .",
